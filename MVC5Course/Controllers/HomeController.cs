@@ -15,15 +15,40 @@ namespace MVC5Course.Controllers
 
         public ActionResult About()
         {
+            //throw new Exception("測試Elmah");
             ViewBag.Message = "Your application description page.";
-
+            
+            //Todo Not finished
             return View();
+
+            //var le = ConsoleColor.Blue;
+
+            //swicth(le)
+           
         }
+
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult MemberProfile()
+        {
+            try
+            {
+                return View();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public ActionResult Action()
+        {
             return View();
         }
     }
